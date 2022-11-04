@@ -9,12 +9,24 @@
 	list-style: none;
 	font-size: large;
 }
-.logo{
+.card-body{
+	background-color: rgba(255, 217, 0, 0.114);
+}
+.name{
+	font-weight: 900;
+	font-size: 110px;
+}
+/*dropdown menu*/
+dropdown-menu{
+	font-size: 0px;
+	background-color: red;
+}
+/*.logo{
 	width: 150px;
 	height:140px;
 	border-radius:20rem;
 
-}
+}*/
 body {
 	background-image: url(https://i.postimg.cc/q71j39rW/pexels-photo-1169754.jpg);
 	background-size: contain;
@@ -53,10 +65,12 @@ main{
 	width: 35px;
 }
 .navbar{
+	/*background-image: url();*/
+	padding-bottom: 200rem;
 	margin: 55px;
 	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+	/*position: sticky;*/
+	padding-top: 200rem;
 }
 .navbariconsproject{
 	height: 35px;
@@ -84,10 +98,17 @@ main{
     background-color: transparent;
 }
 /*responsiveness*/
-@media screen and(max-width:500px) {
+/*@media screen and(max-width:500px) {
     .navbar a{
         float: none;
         display: block;
+    }
+}*/
+/*media query*/
+@media (width <= 300px) {
+    .container img {
+        width: 100%;
+		object-fit: contain;
     }
 }
 
@@ -185,8 +206,8 @@ input[type=text], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-	background-color: transparent;
-	color: #34C5CB;
+	background-color: gold;
+	color: black;
 	text-shadow: #CB3A34 3px 3px 3px;
 	padding: 12px 20px;
 	border: none;
@@ -196,7 +217,7 @@ input[type=text], select, textarea {
   
   /* When moving the mouse over the submit button, add a light color */
   input[type=submit]:hover {
-	background-color: black;
+	background-color:gold;
   }
   
   /* Add a background color and some padding around the form */
@@ -282,7 +303,7 @@ input[type=text], select, textarea {
   }
   
   #myBtn:hover {
-	background-color: aqua;
+	background-color: gold;
   }
   .modal-dialog ,modal-content ,modal-header ,modal-title ,modal-body ,modal-footer{
 	border-radius: 100%;
@@ -296,3 +317,4 @@ input[type=text], select, textarea {
 
 
 
+  
