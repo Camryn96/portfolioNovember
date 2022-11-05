@@ -1,3 +1,4 @@
+/* Universal selectors */
 *,
 *::after,
 *::before{
@@ -60,18 +61,6 @@
         transform:rotate(360deg);
     }
 }
-
-	  
-
-
-
-
-
-
-
-
-
-	
 /*CV button*/
 .cv{
 	width: 5cm;
