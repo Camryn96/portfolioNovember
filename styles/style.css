@@ -1,3 +1,4 @@
+/* Universal selectors */
 *,
 *::after,
 *::before{
@@ -8,6 +9,75 @@
 	color: gold;
 	list-style: none;
 	font-size: large;
+}
+/*logo animation*/
+.logotop{
+	width: 200px;
+	height: 150px;
+	border-radius: 100%;
+}
+.blackhole {
+	
+	border-radius: 100%;
+    margin: 70px;
+    width: 130px;
+    height: 130px;
+    background: transparent;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+/*CV button*/
+.cv{
+	width: 5cm;
+	background-color: red;
+	border-radius: 50px;
+}
+/*testimonials pictures*/
+.testpics{
+	width: 178px;
+	height: 175px;
+	border-radius: 10%;
+}
+
+/*section jump w/h*/
+section{
+	width: 100%;
+	height: 100%;
 }
 .card-body{
 	background-color: rgba(255, 217, 0, 0.114);
@@ -36,7 +106,7 @@ body {
 .profilepic{
     border-style: outset;
     border-color: black;
-    border-radius: 15%;
+    border-radius: 1px;
 }
 h1{
     text-align: center;
@@ -67,7 +137,7 @@ main{
 .navbar{
 	/*background-image: url();*/
 	padding-bottom: 200rem;
-	margin: 55px;
+	margin: 40px;
 	position: -webkit-sticky;
 	/*position: sticky;*/
 	padding-top: 200rem;
@@ -186,9 +256,9 @@ h2{
     text-align: center;
 }
 /*cards in testimonials*/
- /*.card-body{
-	background: -moz-repeating-radial-gradient(#0d96e0, #34C5CB, #f2f2f2);
-}*/
+ .card-body{
+	background-color: lightgray;
+}
 
 
 /*Contact Form*/
