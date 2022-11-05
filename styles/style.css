@@ -1,0 +1,401 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+	color: gold;
+	list-style: none;
+	font-size: large;
+}
+/*logo animation*/
+.logotop{
+	width: 200px;
+	height: 150px;
+	border-radius: 100%;
+}
+.blackhole {
+	
+	border-radius: 100%;
+    margin: 70px;
+    width: 130px;
+    height: 130px;
+    background: transparent;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+	  
+
+
+
+
+
+
+
+
+
+	
+/*CV button*/
+.cv{
+	width: 5cm;
+	background-color: red;
+	border-radius: 50px;
+}
+/*testimonials pictures*/
+.testpics{
+	width: 178px;
+	height: 175px;
+	border-radius: 10%;
+}
+
+/*section jump w/h*/
+section{
+	width: 100%;
+	height: 100%;
+}
+.card-body{
+	background-color: rgba(255, 217, 0, 0.114);
+}
+.name{
+	font-weight: 900;
+	font-size: 110px;
+}
+/*dropdown menu*/
+dropdown-menu{
+	font-size: 0px;
+	background-color: red;
+}
+/*.logo{
+	width: 150px;
+	height:140px;
+	border-radius:20rem;
+
+}*/
+body {
+	background-image: url(https://i.postimg.cc/q71j39rW/pexels-photo-1169754.jpg);
+	background-size: contain;
+	text-shadow: red 2px 2px 2px;
+}
+/*homepage*/
+.profilepic{
+    border-style: outset;
+    border-color: black;
+    border-radius: 1px;
+}
+h1{
+    text-align: center;
+}
+
+main{
+    text-align: center;
+}
+/*icon sizes*/
+.navbaricons{
+	height: 35px;
+    width: 35px;
+	text-shadow: none;
+}
+.skillsicon{
+    height: 35px;
+    width: 35px;
+}
+/*social media icons*/
+.contacticon{
+    height: 35px;
+    width: 35px;
+}
+.socialsicon{
+	height: 35px;
+	width: 35px;
+}
+.navbar{
+	/*background-image: url();*/
+	padding-bottom: 200rem;
+	margin: 40px;
+	position: -webkit-sticky;
+	/*position: sticky;*/
+	padding-top: 200rem;
+}
+.navbariconsproject{
+	height: 35px;
+	width: 35px;
+	float: auto;
+}
+
+ 
+/*Navbar links*/
+.navbar a{
+    float:left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+/*navbar links when hover*/
+.navbar a:hover{
+    background-color: transparent;
+    border-radius: 10rem;
+}
+/*current/active navbar link*/
+.active{
+    background-color: transparent;
+}
+/*responsiveness*/
+/*@media screen and(max-width:500px) {
+    .navbar a{
+        float: none;
+        display: block;
+    }
+}*/
+/*media query*/
+@media (width <= 300px) {
+    .container img {
+        width: 100%;
+		object-fit: contain;
+    }
+}
+
+/*Skills Bar*/
+.container {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-weight: 500;
+}
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+    border: transparent;
+    border-radius: 20px;
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+#bootstrap-bar{
+    animation: bootstrap-fill 2s forwards;
+}
+@keyframes bootstrap-fill{
+    100%{
+        width: 70%;
+    }
+}
+#python-bar{
+    animation: python-fill 2s forwards;
+}
+@keyframes python-fill{
+    100%{
+        width: 50%;
+    }
+}
+.gif{
+  border-radius: 100%;
+}
+/*experience*/
+#experience{
+    text-align: center;
+}
+/*cards in testimonials*/
+ .card-body{
+	background-color: lightgray;
+}
+
+
+/*Contact Form*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 5px solid #34C5CB; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: gold;
+	color: black;
+	text-shadow: #CB3A34 3px 3px 3px;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a light color */
+  input[type=submit]:hover {
+	background-color:gold;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contactbod {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+
+  #fname{
+	background: none;
+  }
+#lname{
+	background: none;
+}
+#subject{
+	background: none;
+}
+.btn {
+	margin-right: 100px;
+	flex-wrap: wrap;
+}
+.btn:nth-child(2){
+	background-color: transparent;
+}
+/*.btn:nth-child(3){
+	background-color: red;
+}*/
+.btn:nth-child(4){
+	background-color: transparent;
+}
+/*.btn:nth-child(5){
+	background-color: red;
+}*/
+.btn:nth-child(6){
+	background-color: transparent;
+}
+/*.btn:nth-child(7){
+	background-color: red;
+}*/
+.btn:nth-child(8){
+	background-color: transparent;
+}
+/*.btn:nth-child(9){
+	background-color: red;
+}*/
+.btn:nth-child(10){
+	background-color: transparent;
+	/*float: right;*/
+}
+.btn:nth-child(12){
+	background-color: transparent;
+	/*float: right;*/
+}
+
+.modal-body{
+	background-image: url(https://i.postimg.cc/q71j39rW/pexels-photo-1169754.jpg);
+}
+.footer{
+	color: transparent;
+	/*color: orange;*/
+	width: 100px;
+	height: auto;
+	float: left;
+	/*border-radius: 1rem;*/
+	font-size: medium;
+}
+/*go back to the top button*/
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: yellow;
+	color: black;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+	background-color: gold;
+  }
+  .modal-dialog ,modal-content ,modal-header ,modal-title ,modal-body ,modal-footer{
+	border-radius: 100%;
+  }
+
+
+
+
+
+
+
+
+
+  
